@@ -1,9 +1,11 @@
 {
   "name": "js-build",
   "version": "1.0.0",
-  "description": "Javascript build template or boilerplate",
+  "description": "Javascript-build template and boilerplate",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "lint:sample": "eslint reference/sample/eslint/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,15 @@
   },
   "homepage": "https://github.com/jlongyam/js-build#readme",
   "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "buble": "^0.20.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
     "rollup": "^4.32.0"
+  },
+  "dependencies": {
+    "chai": "^5.1.2",
+    "chalk": "^5.4.1",
+    "inquirer": "^12.3.3"
   }
 }
